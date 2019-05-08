@@ -9,6 +9,14 @@ export default [
     }
   },
   {
+    path: '/',
+    meta: { },
+    name: 'Root',
+    redirect: {
+      name: 'Chat'
+    }
+  },
+  {
     path: '/login',
     meta: {
       public: true,
@@ -18,14 +26,6 @@ export default [
       /* webpackChunkName: "routes" */
       `@/views/Login.vue`
     )
-  },
-  {
-    path: '/',
-    meta: { },
-    name: 'Root',
-    redirect: {
-      name: 'Chat'
-    }
   },
   {
     path: '/chat',
